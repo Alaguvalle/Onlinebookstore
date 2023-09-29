@@ -1,0 +1,22 @@
+.search{
+    padding: 10%;
+    height: 50px;
+}
+.btn-wider {
+    min-width: 70px; /* Adjust the width as needed */
+    width: 100px
+  }
+.neohub{
+    text-decoration: none;
+    color:black;
+}
+.neohub:hover{
+    text-decoration: underline;
+    color:black
+}
+.navbarDesign{
+    border-radius: 300px;
+    box-shadow: 0 4px 6px rgba(148, 62, 62, 0.7);
+    margin-top: 20px;
+}
+

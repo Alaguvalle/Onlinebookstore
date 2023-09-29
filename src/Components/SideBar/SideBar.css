@@ -1,0 +1,71 @@
+Sidebar Container
+.sidebar {
+    width: 250px; /* Set your desired sidebar width */
+    height: 100%; /* Set your desired sidebar height */
+    background-color: #fff; /* Set your desired background color */
+    position:fixed;
+    top: 0;
+    left: -250px; /* Start with the sidebar hidden */
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+    padding-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sidebar Expanding Animation */
+  .sidebar.expanded {
+    left: 0; /* Show the sidebar when expanded */
+  }
+  
+  /* Hamburger Toggle Button */
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px; /* Adjust icon size */
+  }
+  
+  .toggle-btn span {
+    display: block;
+    width: 25px; /* Set your desired icon width */
+    height: 3px; /* Set your desired icon height */
+    background-color: #000; /* Set your desired icon color */
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .toggle-btn span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .toggle-btn span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Sidebar Menu Links */
+  .flex-column {
+    padding: 0;
+    margin-top: 40px; /* Set your desired top margin for the links */
+  }
+  
+  .flex-column a {
+    padding: 15px 20px; /* Set your desired padding for the links */
+    font-weight: bold;
+    color: #000; /* Set your desired link text color */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .flex-column a:hover {
+    background-color: #f5f5f5; /* Set your desired link hover background color */
+  }
+  
+  /* Adjust styles as needed for your project's design */
+  
